@@ -15,15 +15,6 @@ public class Main {
 
             Comparator<Person> comparator = (o1, o2) -> o1.compareTo(o2);
 
-//        if (o1.getSurname().length() < o2.getSurname().length()) {
-//            return -1;
-//        } else if (o1.getSurname().length() > o2.getSurname().length()) {
-//            1 1;
-//        } else {
-//            return Integer.compare(o1.getAge(),o2.getAge());
-//        }
-
-
         Collections.sort(people, comparator);
 
         System.out.println(people);
