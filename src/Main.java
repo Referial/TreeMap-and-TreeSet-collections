@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main {
@@ -12,7 +13,9 @@ public class Main {
         people.add(new Person("Masha", "Vasnizova", 43));
         System.out.println(people);
 
-        Collections.sort(people, new PersonSurnameSort());
+            Comparator<Person> comparator = (o1, o2) -> o1.compareTo(o2);
+
+        Collections.sort(people, comparator);
 
         System.out.println(people);
     }
